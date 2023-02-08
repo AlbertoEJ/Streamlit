@@ -20,14 +20,19 @@ key=b'12345678901234567890123456789012'
 
 
 
-st.title('Cifraco de un mensaje con AES')
+st.title('Cifrado de un mensaje con AES')
 st.text('Código realizado en Python por Elena :D')
 
 texto = st.text_input('Ingresa un texto a cifrar:',)
 mensaje=bytes(texto, 'utf-8')
 
-cifrado=encrypt(key,mensaje)
+key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes.',)
+keybytes=bytes(key, 'utf-8')
 
-desencriptado=decrypt(key,cifrado)
-st.write('El texto cifrado es: ', cifrado)
-st.write('El texto descifrado es: ', desencriptado)
+cifrado=encrypt(keybytes,mensaje)
+
+desencriptado=decrypt(keybytes,cifrado)
+
+if texto:
+    st.write('El texto cifrado es: ', cifrado)
+    st.write('El texto descifrado es: ', desencriptado)
