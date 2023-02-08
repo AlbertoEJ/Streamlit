@@ -1,7 +1,8 @@
 import streamlit as st
 
+st.title('Tarea de cifrado de Elena Herandez')
+st.text('¡Esto es puro Pythoooon!')
 
-title = st.number_input('Ingresa un número',)
+texto = st.text_input('Ingresa un texto a cifrar',)
 
-suma=title+1
-st.write('La suma es:', suma)
+st.write('El texto que cifrarás es:', texto)
