@@ -22,10 +22,11 @@ cifrado=encrypt(key,b'Holaaaa')
 
 desencriptado=decrypt(key,cifrado)
 
-st.title('Tarea de cifrado de Elena Herandez')
-st.text('¡Esto es puro Pythoooon!')
+st.title('Cifraco de un mensaje con AES')
+st.text('Código realizado en Python por Elena :D')
 
-texto = st.text_input('Ingresa un texto a cifrar',)
+texto = st.text_input('Ingresa un texto a cifrar:',)
+mensaje=bytes(texto, 'utf-8')
 
-st.write('El texto cifrado es: ', cifrado)
+st.write('El texto cifrado es: ', mensaje)
 st.write('El texto descifrado es: ', desencriptado)
