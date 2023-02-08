@@ -1,5 +1,5 @@
 import streamlit as st
-import pycrypto
+from Crypto.Cipher import AES
 
 st.title('Tarea de cifrado de Elena Herandez')
 st.text('¡Esto es puro Pythoooon!')
