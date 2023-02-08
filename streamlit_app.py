@@ -23,7 +23,7 @@ key=b'12345678901234567890123456789012'
 st.title('Cifrado de un mensaje con AES')
 st.text('Código realizado en Python por Elena :D')
 
-texto = st.text_input('Ingresa un texto a cifrar:',)
+texto = st.text_input('Ingresa un texto a cifrar:',type="password")
 mensaje=bytes(texto, 'utf-8')
 
 key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes.',value="12345678901234567890123456789012")
