@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-title = st.text_input('Movie title', 'Life of Brian')
+title = st.number_input('Ingresa un número',)
 
-suma=str(title+1)
+suma=title+1
 st.write('La suma es:', suma)
