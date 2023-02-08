@@ -5,4 +5,4 @@ st.text('¡Esto es puro Pythoooon!')
 
 texto = st.text_input('Ingresa un texto a cifrar',)
 
-st.write('El texto que cifrarás es:', texto)
+st.write('El texto que cifrarás es: ', texto)
