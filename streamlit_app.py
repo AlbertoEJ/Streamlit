@@ -18,7 +18,7 @@ def decrypt(key, data):
 
 key=b'12345678901234567890123456789012'
 
-cifrado=encrypt(key,b'Holaaaa')
+cifrado=encrypt(key,'Holaaaa')
 
 desencriptado=decrypt(key,cifrado)
 
