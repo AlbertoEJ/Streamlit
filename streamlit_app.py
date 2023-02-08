@@ -1,5 +1,7 @@
 import streamlit as st
 from Crypto.Cipher import AES
+from PIL import Image
+
 
 def encrypt(key, data):
     cipher = AES.new(key, AES.MODE_EAX)
@@ -52,7 +54,9 @@ if opcion == 'Sí':
 if opcion == 'No, enseñame':
     st.markdown('Actualmente, hay tres tipos de cifrado AES: 128 bits, 192 bits y 256 bits, donde este último por su longitud en el número de bits es el más seguro. Esto se diseñó basándose en la Ley de Moore, ya que las primeras pruebas demostraron que, en un tiempo relativamente corto, la potencia de los procesadores podría romper el cifrado más débil y, por tanto, con menor número de bits en periodos de tiempo cada vez más bajo.')
     st.markdown("Para entender el funcionamiento del cifrado AES hemos de entender que la información original sufre una transformación, donde los significantes binarios son modificados de tal manera que sin el decodificador pertinente no se pueden entender. Entiéndase significante como el código binario que codifica lo que son datos e instrucciones que el procesador ha de ejecutar. Así pues, de la misma manera que un conjunto de letras y números ilegibles para nosotros no tiene sentido alguno, para un procesador tampoco.")
-    
+
+    image = Image.open('/AES-Design.jpg')
+    st.image(image, caption='Funcionamiento de AES')
 
 
 
