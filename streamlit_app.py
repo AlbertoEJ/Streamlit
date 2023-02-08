@@ -29,7 +29,8 @@ mensaje=bytes(texto, 'utf-8')
 key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes.',value="12345678901234567890123456789012")
 keybytes=bytes(key, 'utf-8')
 
-len(keybytes)
+if len(key)!=32:
+    st.text('Ingrea otra clave que sea de 32 bytes')
 
 cifrado=encrypt(keybytes,mensaje)
 
