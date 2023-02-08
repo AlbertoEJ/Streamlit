@@ -57,11 +57,21 @@ if opcion == 'No, enseñame':
 
     image = Image.open('AES-Desing.jpg')
     st.image(image, caption='Funcionamiento de AES')
-    st.markdown("Entre los tres tipos de cifrados AES la única diferencia es precisamente la longitud de la clave, por lo que si comparamos 128 bits con 256 bits tendremos una clave el doble de larga en este último en lo que a cantidad de bits se refiere. Esto se traduce en que la clave va a tener $2^{256}$ valores distintos y, por tanto, el tiempo necesario para descifrarla será mucho más alta, tanto que incluso el ordenador más potente tardaría años en conseguirlo a través de técnicas de descifrado avanzado y el coste en tiempo no compensa a lo que se puede obtener.")
+    st.markdown("Entre los tres tipos de cifrados AES la única diferencia es precisamente la longitud de la clave, por lo que si comparamos 128 bits con 256 bits tendremos una clave el doble de larga en este último en lo que a cantidad de bits se refiere. Esto se traduce en que la clave va a tener $2^{256}$ valores distintos y, por tanto, el tiempo necesario para descifrarla será mucho más alta, tanto que incluso la computadora más potente tardaría años en conseguirlo a través de técnicas de descifrado avanzado y el coste en tiempo no compensa a lo que se puede obtener.")
+    st.markdown("Visualizarlo no cuesta mucho, solo tienes que imaginar una caja fuerte cerrada con un candado con 256 interruptores de encendido y apagado y solo una combinación de todas las posibles es la correcta.")
+    st.markdown("PROCESO DE CIFRADO:")
+    st.markdown("Cada byte de datos se sustituye por otro mediante una tabla predeterminada para a continuación agarrar cada matriz 4×4 y moverla de la siguiente manera:")
+    st.markdown("1. Los bytes de la segunda fila se mueven un espacio a la izquierda.")    
+    st.markdown("2. Los bytes en la tercera fila se mueven dos espacios.")    
+    st.markdown("3. En cuanto a los de la cuarta fila, estos se mueven tres espacios.")    
+    st.markdown("4. Finalmente, se mezclan las columnas y se añade la clave inicial al conjunto y vuelta a empezar.")
+    
+    st.markdown("Esto genera un texto cifrado que nada tiene que ver con el original y que para descifrarlo se requiere hacer los pasos inversos conociendo previamente dicha clave.")
+    image = Image.open('maxresdefault.jpg')
+    st.image(image, caption='Funcionamiento de AES')
 
 
-
-
+    st.title('Ya sabes cifrar en AES, ahora práctica selecionando en el menú anterior que sabes cifrar en AES.')
 
     
 
