@@ -29,5 +29,5 @@ mensaje=bytes(texto, 'utf-8')
 cifrado=encrypt(key,mensaje)
 
 desencriptado=decrypt(key,cifrado)
-st.write('El texto cifrado es: ', mensaje)
+st.write('El texto cifrado es: ', cifrado)
 st.write('El texto descifrado es: ', desencriptado)
