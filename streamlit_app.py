@@ -29,9 +29,12 @@ mensaje=bytes(texto, 'utf-8')
 key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes.',value="12345678901234567890123456789012")
 keybytes=bytes(key, 'utf-8')
 
+len(keybytes)
+
 cifrado=encrypt(keybytes,mensaje)
 
 desencriptado=decrypt(keybytes,cifrado)
+st.write(len(keybytes))
 
 if st.button('Cifrar'):
     st.write('El texto cifrado es: ', cifrado)
