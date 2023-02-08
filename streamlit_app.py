@@ -25,7 +25,7 @@ st.text('Código realizado en Python por Elena :D')
 
 opcion = st.radio(
     "¿Sabes cómo funciona el cifrado AES-256?",
-    ('Sí', 'No, enseñame'))
+    ('Selecciona una opción','Sí', 'No, enseñame'))
 
 if opcion == 'Sí':
     texto = st.text_input('Ingresa un texto a cifrar:',type="password")
