@@ -20,9 +20,12 @@ key=b'12345678901234567890123456789012'
 
 cifrado=encrypt(key,b'Holaaaa')
 
+desencriptado=decrypt(key,cifrado)
+
 st.title('Tarea de cifrado de Elena Herandez')
 st.text('¡Esto es puro Pythoooon!')
 
 texto = st.text_input('Ingresa un texto a cifrar',)
 
-st.write('El texto que cifrarás es: ', cifrado)
+st.write('El texto cifrado es: ', cifrado)
+st.write('El texto descifrado es: ', desencriptado)
