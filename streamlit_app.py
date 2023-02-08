@@ -33,6 +33,15 @@ cifrado=encrypt(keybytes,mensaje)
 
 desencriptado=decrypt(keybytes,cifrado)
 
-if texto:
+if st.button('Cifrar'):
     st.write('El texto cifrado es: ', cifrado)
+else:
+    st.write('Presiona cifrar para mostrar el mensaje cifrado')
+    
+if st.button('Decifrar'):
     st.write('El texto descifrado es: ', desencriptado)
+else:
+    st.write('Presiona cifrar para mostrar el mensaje descifrado')
+
+
+    
