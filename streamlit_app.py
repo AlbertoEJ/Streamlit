@@ -57,6 +57,7 @@ if opcion == 'No, enseñame':
 
     image = Image.open('AES-Desing.jpg')
     st.image(image, caption='Funcionamiento de AES')
+    st.markdown("Entre los tres tipos de cifrados AES la única diferencia es precisamente la longitud de la clave, por lo que si comparamos 128 bits con 256 bits tendremos una clave el doble de larga en este último en lo que a cantidad de bits se refiere. Esto se traduce en que la clave va a tener $2^{256}$ valores distintos y, por tanto, el tiempo necesario para descifrarla será mucho más alta, tanto que incluso el ordenador más potente tardaría años en conseguirlo a través de técnicas de descifrado avanzado y el coste en tiempo no compensa a lo que se puede obtener.")
 
 
 
