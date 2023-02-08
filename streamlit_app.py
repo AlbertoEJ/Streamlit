@@ -26,7 +26,7 @@ st.text('Código realizado en Python por Elena :D')
 texto = st.text_input('Ingresa un texto a cifrar:',type="password")
 mensaje=bytes(texto, 'utf-8')
 
-key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes. IMPORTANTE: DEBE SER DE 32 BYTES (32 CARÁCTERES)',value="12345678901234567890123456789012")
+key = st.text_input('Ingresa la llave para cifrar. Esta llave se convertirá automáticamente a bytes. IMPORTANTE: DEBE SER DE 32 BYTES (32 CARÁCTERES)',)
 keybytes=bytes(key, 'utf-8')
 
 if len(key)==32:
