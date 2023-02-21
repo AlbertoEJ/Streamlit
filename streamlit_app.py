@@ -23,7 +23,7 @@ key=b'12345678901234567890123456789012'
 
 
 st.title('Cifrado de un mensaje con AES-256 bits')
-st.text('Código realizado en Python por Alberto :D')
+st.text('Código realizado en Python por Elena')
 
 opcion = st.radio(
     "¿Sabes cómo funciona el cifrado AES-256?",
